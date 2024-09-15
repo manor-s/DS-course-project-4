@@ -1,1 +1,3 @@
-# DS-course-project-3
+# DS course project 3
+## Overview
+##### This is a collaborative work done by...
