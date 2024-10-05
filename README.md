@@ -1,4 +1,4 @@
-# DS course project 3
+# DS course project 4 - Classification
 ## Overview
 ##### This is a collaborative work designed to practice with git
 Performing Churn Modeling Project on Banking customers.
