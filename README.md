@@ -1,7 +1,8 @@
 # DS course project 4 - Classification
 The source of the data can be found in https://www.kaggle.com/datasets/shrutimechlearn/churn-modelling/data
 
-![image](https://github.com/user-attachments/assets/f11d5423-6f6c-4a39-a355-15975e2cd92a)
+![image](https://github.com/user-attachments/assets/cf087ebc-eb59-48a4-b41e-23cb3974de92)
+
 
 # Churn Prediction in Banking
 
