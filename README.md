@@ -1,6 +1,8 @@
 # DS course project 4 - Classification
 The source of the data can be found in https://www.kaggle.com/datasets/shrutimechlearn/churn-modelling/data
 
+![image](https://github.com/user-attachments/assets/f11d5423-6f6c-4a39-a355-15975e2cd92a)
+
 # Churn Prediction in Banking
 
 This repository contains a machine learning model that predicts **customer churn** for a banking institution. 
@@ -15,7 +17,6 @@ This project uses various machine learning and ensemble techniques, with hyperpa
   - [Threshold Adjustment](#threshold-adjustment)
 - [Model Evaluation](#model-evaluation)
 - [Results](#results)
-- [Contributing](#contributing)
 
 ## Project Overview
 
