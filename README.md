@@ -29,13 +29,13 @@ Additionally, threshold tuning and custom ensemble methods were applied to impro
 
 ### Data Preprocessing
 - **Feature Engineering**: New feature was created to enhance model performance.
-- **Scaling and Encoding**: Numerical features were standardized using `StandardScaler` within a `Pipeline`, and categorical variables were one-hot encoded.
+- **Scaling and Encoding**: Numerical features were standardized using `StandardScaler` within a `Pipeline`, and categorical variables were one-hot encoded ('dummies').
 - **Handling Imbalanced Data**: SMOTE (Synthetic Minority Oversampling Technique) was used to balance the dataset by oversampling the minority class.
 
 ### Modeling and Hyperparameter Tuning
-- **Ensemble Models**: A Voting Classifier with soft voting was used, combining Random Forest and XGBoost models.
 - **Hyperparameter Tuning**: Optuna was employed to tune model parameters, with careful configuration to maximize F1 score, focusing on recall and precision.
 - **Custom Thresholds**: After obtaining probabilities from the ensemble, optimal decision thresholds were calculated to maximize F1 score, achieving the best balance between precision and recall.
+- **Ensemble Model**: A Voting Classifier with soft voting was used, combining Random Forest and XGBoost models.
 
 ### Threshold Adjustment
 The final model’s threshold was tuned using a custom method:
@@ -52,7 +52,7 @@ Additional techniques:
 
 ## Results
 
-The final model achieved the following results on the test dataset was an esmble model whic gave the following metrics:
+The final model achieved the following results on the test dataset was an ensmble model of three high-performance models, namely random forest and xgb models:
 - **Recall**: 0.70
 - **Precision**: 0.58
 - **F1 Score**: 0.63
