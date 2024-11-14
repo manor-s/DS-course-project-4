@@ -28,13 +28,13 @@ Additionally, threshold tuning and custom ensemble methods were applied to impro
 ## Methods and Techniques
 
 ### Data Preprocessing
-- **Feature Engineering**: Several new features were created to enhance model performance.
+- **Feature Engineering**: New feature was created to enhance model performance.
 - **Scaling and Encoding**: Numerical features were standardized using `StandardScaler` within a `Pipeline`, and categorical variables were one-hot encoded.
-- **Handling Imbalanced Data**: SMOTE (Synthetic Minority Oversampling Technique) was tested to balance the dataset by oversampling the minority class.
+- **Handling Imbalanced Data**: SMOTE (Synthetic Minority Oversampling Technique) was used to balance the dataset by oversampling the minority class.
 
 ### Modeling and Hyperparameter Tuning
-- **Ensemble Models**: A Voting Classifier with soft voting was used, combining a Random Forest and XGBoost model.
-- **Hyperparameter Tuning**: Optuna was employed to tune model parameters, with careful configuration to maximize F1 score, focusing on both recall and precision.
+- **Ensemble Models**: A Voting Classifier with soft voting was used, combining Random Forest and XGBoost models.
+- **Hyperparameter Tuning**: Optuna was employed to tune model parameters, with careful configuration to maximize F1 score, focusing on recall and precision.
 - **Custom Thresholds**: After obtaining probabilities from the ensemble, optimal decision thresholds were calculated to maximize F1 score, achieving the best balance between precision and recall.
 
 ### Threshold Adjustment
@@ -44,7 +44,7 @@ The final model’s threshold was tuned using a custom method:
 ## Model Evaluation
 
 The model’s performance was evaluated using:
-- **Accuracy, Precision, Recall, F1 Score**: Calculated on the test dataset to assess model effectiveness.
+- **Recall, Precision, F1 Score** and **Accuracy**: Calculated on the test dataset to assess model effectiveness.
 - **Confusion Matrix**: Provided a breakdown of true positives, false positives, true negatives, and false negatives.
 
 Additional techniques:
@@ -52,10 +52,10 @@ Additional techniques:
 
 ## Results
 
-The final model achieved the following results on the test dataset:
-- **Accuracy**: `X.XX`
-- **Precision**: `X.XX`
-- **Recall**: `X.XX`
-- **F1 Score**: `X.XX`
+The final model achieved the following results on the test dataset was an esmble model whic gave the following metrics:
+- **Recall**: 0.70
+- **Precision**: 0.58
+- **F1 Score**: 0.63
+- **Accuracy**: 0.84
 
-The model demonstrated strong performance in identifying customers likely to churn, with a customized threshold to balance precision and recall effectively.
+The model demonstrated best performance, among those tested, in identifying customers likely to churn, specifically focusing on not missing potential churners, with a customized threshold to balance precision and recall effectively.
